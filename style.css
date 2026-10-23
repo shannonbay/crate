@@ -1,0 +1,359 @@
+/* Crate's site: the same palette as the app's default dark skin, with a light version. */
+:root {
+  --bg: #121316;
+  --bg-alt: #0c0d0f;
+  --surface: #1c1d21;
+  --border: #2a2c31;
+  --text: #ececef;
+  --muted: #9a9ca5;
+  --accent: #e0a63b;
+  --accent-text: #1a1305;
+  --radius: 10px;
+  color-scheme: dark;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #f7f7f8;
+    --bg-alt: #ececef;
+    --surface: #ffffff;
+    --border: #dcdce0;
+    --text: #17181b;
+    --muted: #5d5f67;
+    --accent: #a86e09;
+    --accent-text: #ffffff;
+    color-scheme: light;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 72px;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Segoe UI Variable", "Segoe UI", system-ui, -apple-system, sans-serif;
+  font-size: 17px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--accent);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.wrap {
+  width: min(1120px, 100%);
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* ---------- header ---------- */
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: color-mix(in srgb, var(--bg) 88%, transparent);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border);
+}
+
+.header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  height: 60px;
+}
+
+.wordmark {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.site-header nav {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.site-header nav a {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.site-header nav a:hover {
+  color: var(--text);
+}
+
+/* ---------- hero ---------- */
+
+.hero {
+  text-align: center;
+  padding-top: 72px;
+  padding-bottom: 32px;
+}
+
+h1 {
+  font-size: clamp(2.1rem, 5vw, 3.4rem);
+  line-height: 1.15;
+  margin: 0 auto 16px;
+  max-width: 14em;
+  letter-spacing: -0.02em;
+}
+
+.lede {
+  font-size: 1.2rem;
+  color: var(--muted);
+  max-width: 36em;
+  margin: 0 auto 28px;
+}
+
+.cta {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 48px;
+}
+
+.button {
+  display: inline-block;
+  padding: 11px 22px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.button:hover {
+  border-color: var(--muted);
+}
+
+.button.primary {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--accent-text);
+}
+
+.button.primary:hover {
+  filter: brightness(1.08);
+}
+
+/* Screenshots sit in a soft frame, like a window on a desk. */
+.shot {
+  margin: 0;
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--border);
+  box-shadow: 0 24px 60px rgb(0 0 0 / 0.35);
+  background: var(--surface);
+}
+
+.hero-shot {
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+/* ---------- features ---------- */
+
+.features {
+  padding: 48px 0;
+}
+
+.feature {
+  display: grid;
+  grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+  gap: 48px;
+  align-items: center;
+  padding-top: 56px;
+  padding-bottom: 56px;
+}
+
+/* Alternate sides, keeping the screenshot in the wider column. */
+.feature.flip {
+  grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
+}
+
+.feature.flip .feature-text {
+  order: 2;
+}
+
+.shot a {
+  display: block;
+  cursor: zoom-in;
+}
+
+.feature h2,
+.more h2,
+.get h2 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  line-height: 1.2;
+  margin: 0 0 12px;
+  letter-spacing: -0.01em;
+}
+
+.feature p {
+  color: var(--muted);
+  margin: 0 0 12px;
+}
+
+.feature ul {
+  margin: 0;
+  padding-left: 1.2em;
+}
+
+.feature li {
+  margin: 6px 0;
+}
+
+.feature li::marker {
+  color: var(--accent);
+}
+
+.shot-pair {
+  display: grid;
+  gap: 16px;
+}
+
+/* ---------- everything else ---------- */
+
+.more {
+  padding-top: 32px;
+  padding-bottom: 72px;
+}
+
+.more h2 {
+  text-align: center;
+  max-width: 22em;
+  margin: 0 auto 32px;
+}
+
+.grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+.grid li {
+  padding: 18px 20px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.grid span {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+/* ---------- get ---------- */
+
+.get {
+  padding-top: 56px;
+  padding-bottom: 72px;
+  border-top: 1px solid var(--border);
+  max-width: 760px;
+}
+
+.cta.left {
+  justify-content: flex-start;
+  margin-bottom: 12px;
+}
+
+.get h3 {
+  margin: 32px 0 4px;
+  font-size: 1.15rem;
+}
+
+.get ol {
+  padding-left: 1.3em;
+}
+
+pre {
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 14px 18px;
+  overflow-x: auto;
+  font-size: 0.95rem;
+}
+
+code {
+  font-family: "Cascadia Code", Consolas, ui-monospace, monospace;
+}
+
+.note {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+/* ---------- footer ---------- */
+
+.site-footer {
+  border-top: 1px solid var(--border);
+  background: var(--bg-alt);
+  padding: 28px 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.site-footer p {
+  margin: 6px 0;
+}
+
+/* ---------- small screens ---------- */
+
+@media (max-width: 820px) {
+  .feature,
+  .feature.flip {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding-top: 36px;
+    padding-bottom: 36px;
+  }
+
+  .feature.flip .feature-text {
+    order: 0;
+  }
+
+  .hero {
+    padding-top: 48px;
+  }
+
+  .site-header nav {
+    gap: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .site-header nav a:first-child {
+    display: none;
+  }
+}

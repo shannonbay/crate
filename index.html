@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Crate: a music player built around your albums</title>
+    <meta
+      name="description"
+      content="Crate is a music player for Windows built around albums and artists. Edit tags in bulk, write notes, set custom covers, add band members, and skin it your way."
+    />
+    <meta property="og:title" content="Crate: a music player built around your albums" />
+    <meta
+      property="og:description"
+      content="A Windows music player for people who care about their albums: notes, covers, release types, band members and tag editing."
+    />
+    <meta property="og:image" content="screenshots/albums.jpg" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap header-row">
+        <a class="wordmark" href="#top">Crate</a>
+        <nav aria-label="Sections">
+          <a href="#features">Features</a>
+          <a href="#more">Everything else</a>
+          <a href="#get">Get Crate</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero wrap">
+        <h1>Your music, your notes, your covers.</h1>
+        <p class="lede">
+          Crate is a music player for Windows built around albums and artists, the way you think about your music. Tag
+          it, annotate it, and give it the covers it deserves.
+        </p>
+        <div class="cta">
+          <a class="button primary" href="#features">See what it does</a>
+          <a class="button" href="#get">Download</a>
+        </div>
+        <figure class="shot hero-shot">
+          <a href="screenshots/albums.jpg" title="View full size"><img
+            src="screenshots/albums.jpg"
+            width="1600"
+            height="1000"
+            alt="Crate's Albums view: a grid of album covers, with the playing song's cover large in a panel on the right and the play controls along the bottom."
+          /></a>
+        </figure>
+      </section>
+
+      <section id="features" class="features">
+        <article class="feature wrap">
+          <div class="feature-text">
+            <h2>Albums first</h2>
+            <p>
+              Every release is an album, EP or single, worked out from its length and number of songs, and you can
+              change it. Filter by type, and see an artist's albums, EPs and singles grouped on their page.
+            </p>
+            <ul>
+              <li>Album pages with your own description</li>
+              <li>Swap in any cover you like, or give a single song its own (great for singles released before the album)</li>
+              <li>Drag songs to reorder an album; the new track numbers are saved to the files</li>
+            </ul>
+          </div>
+          <figure class="shot">
+            <a href="screenshots/album.jpg" title="View full size"><img
+              src="screenshots/album.jpg"
+              width="1600"
+              height="1000"
+              loading="lazy"
+              alt="An album page: large cover, title, artist, release type, Play, Add to queue, Add to playlist and Edit album info buttons, and the track list."
+            /></a>
+          </figure>
+        </article>
+
+        <article class="feature wrap flip">
+          <div class="feature-text">
+            <h2>Fix a whole album's tags at once</h2>
+            <p>
+              Select songs with Ctrl- or Shift-click and edit their tags together. Fields that differ are left alone
+              unless you type in them, and you can number the songs 1, 2, 3… in one go.
+            </p>
+            <ul>
+              <li>Tags are written into the music files, so every other player sees them too</li>
+              <li>Rename an album or artist and your notes, covers and band members follow</li>
+              <li>Or edit one field in place: hover any detail in the Now playing panel and click the pencil</li>
+            </ul>
+          </div>
+          <figure class="shot">
+            <a href="screenshots/edit-tags.jpg" title="View full size"><img
+              src="screenshots/edit-tags.jpg"
+              width="1600"
+              height="1000"
+              loading="lazy"
+              alt="The Edit album info dialog with fields for artist, album artist, album, disc, year and genre, and an option to number the songs."
+            /></a>
+          </figure>
+        </article>
+
+        <article class="feature wrap">
+          <div class="feature-text">
+            <h2>Everything is a right-click away</h2>
+            <p>
+              Click a song to select it, then press Play. Right-click for Play next, Add to queue, Add to playlist,
+              song details and tag editing. With several songs selected, it all applies to every one of them.
+            </p>
+            <ul>
+              <li>Sort the song list by title, artist, album or length</li>
+              <li>Search as you type across titles, artists and albums</li>
+              <li>Keyboard friendly: arrows, Enter, Space, Ctrl+A</li>
+            </ul>
+          </div>
+          <figure class="shot">
+            <a href="screenshots/song-menu.jpg" title="View full size"><img
+              src="screenshots/song-menu.jpg"
+              width="1600"
+              height="1000"
+              loading="lazy"
+              alt="The Songs list sorted by title with three songs selected and a right-click menu reading 3 songs selected, with Play, Play next, Add to queue, Add to playlist and Edit tags for 3 songs."
+            /></a>
+          </figure>
+        </article>
+
+        <article class="feature wrap flip">
+          <div class="feature-text">
+            <h2>Artists, with the people behind them</h2>
+            <p>
+              Give artists a photo and a bio, and list band members with their roles and years. Each member gets their
+              own page, even with no solo music, and links back to their bands.
+            </p>
+          </div>
+          <figure class="shot">
+            <a href="screenshots/artist.jpg" title="View full size"><img
+              src="screenshots/artist.jpg"
+              width="1600"
+              height="1000"
+              loading="lazy"
+              alt="An artist page with a round artist image, Play all, a bio box, an Add band members link and the artist's releases grouped as Singles."
+            /></a>
+          </figure>
+        </article>
+
+        <article class="feature wrap">
+          <div class="feature-text">
+            <h2>Playlists that are quick to build</h2>
+            <p>
+              Search your library, tick the songs you want across as many searches as you like, and add them in one go.
+              Drag to reorder, save the queue as a playlist, and repeats are allowed.
+            </p>
+          </div>
+          <figure class="shot">
+            <a href="screenshots/add-songs.jpg" title="View full size"><img
+              src="screenshots/add-songs.jpg"
+              width="1600"
+              height="1000"
+              loading="lazy"
+              alt="The Add songs dialog over a playlist: a search box and a list of songs with checkboxes, two ticked, and an Add 2 songs button."
+            /></a>
+          </figure>
+        </article>
+
+        <article class="feature wrap flip">
+          <div class="feature-text">
+            <h2>Make it yours</h2>
+            <p>
+              Choose a built-in skin, or make your own: pick the colours, fonts and corner roundness, and set any image
+              as a background. Share skins as files with friends.
+            </p>
+          </div>
+          <div class="shot-pair">
+            <figure class="shot">
+              <a href="screenshots/albums-light.jpg" title="View full size"><img
+                src="screenshots/albums-light.jpg"
+                width="1600"
+                height="1000"
+                loading="lazy"
+                alt="The Albums view in the Crate Light skin."
+              /></a>
+            </figure>
+            <figure class="shot">
+              <a href="screenshots/songs.jpg" title="View full size"><img
+                src="screenshots/songs.jpg"
+                width="1600"
+                height="1000"
+                loading="lazy"
+                alt="The Songs view in the Crate Dark skin with three songs selected."
+              /></a>
+            </figure>
+          </div>
+        </article>
+      </section>
+
+      <section id="more" class="more wrap">
+        <h2>Everything else you'd expect, and a few things you wouldn't</h2>
+        <ul class="grid">
+          <li>
+            <strong>Now playing panel</strong>
+            <span>The current song's cover large, with its details and your notes, and the queue underneath.</span>
+          </li>
+          <li>
+            <strong>Plays what you have</strong>
+            <span>MP3, FLAC, WAV, AAC/M4A, OGG and Opus, including phone voice recordings.</span>
+          </li>
+          <li>
+            <strong>Media keys</strong>
+            <span>Your keyboard's play, pause and skip keys work, and Windows shows what's playing.</span>
+          </li>
+          <li>
+            <strong>Picks up where you left off</strong>
+            <span>The queue, song and position come back when you reopen Crate.</span>
+          </li>
+          <li>
+            <strong>Always up to date</strong>
+            <span>Crate watches your music folders and adds new music within seconds.</span>
+          </li>
+          <li>
+            <strong>Shuffle and repeat</strong>
+            <span>Shuffle, repeat all or repeat one, and turning shuffle off puts the order back.</span>
+          </li>
+          <li>
+            <strong>Backups built in</strong>
+            <span>A backup every day, plus one-click backup and restore of everything you've added.</span>
+          </li>
+          <li>
+            <strong>Your layout</strong>
+            <span>Drag the panel edges to size things the way you like; Crate remembers.</span>
+          </li>
+          <li>
+            <strong>Private by design</strong>
+            <span>No account and no cloud. Your library and notes stay on your computer.</span>
+          </li>
+        </ul>
+      </section>
+
+      <section id="get" class="get wrap">
+        <h2>Get Crate</h2>
+        <p>Crate is free, for Windows 10 and 11.</p>
+        <p class="cta left">
+          <a class="button primary" href="https://github.com/shannonbay/crate/releases/latest">Download for Windows</a>
+          <a class="button" href="https://github.com/shannonbay/crate/releases">All releases</a>
+        </p>
+        <p class="note">
+          On the release page, download the file ending in <code>_x64-setup.exe</code> and run it. It installs for your
+          Windows account, so no administrator rights are needed. Crate is in early development and the installer
+          isn't signed yet, so Windows may show "Windows protected your PC": click <strong>More info</strong>, then
+          <strong>Run anyway</strong>.
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap">
+        <p>
+          Crate is built with Tauri, Rust and React.
+          <a href="https://github.com/shannonbay/crate/issues">Report a problem or suggest a feature</a>.
+        </p>
+        <p class="credits">
+          Album art and artist images in the screenshots are public-domain paintings from Wikimedia Commons:
+          <a href="https://commons.wikimedia.org/wiki/File:John_Martin_-_The_Plains_of_Heaven_-_Google_Art_Project.jpg">The Plains of Heaven</a>
+          (John Martin, about 1851),
+          <a href="https://commons.wikimedia.org/wiki/File:Albert_Bierstadt_-_Among_the_Sierra_Nevada,_California_-_Google_Art_Project.jpg">Among the Sierra Nevada, California</a>
+          (Albert Bierstadt, 1868),
+          <a href="https://commons.wikimedia.org/wiki/File:Caspar_David_Friedrich_-_Wanderer_above_the_sea_of_fog.jpg">Wanderer above the Sea of Fog</a>
+          (Caspar David Friedrich, about 1817),
+          <a href="https://commons.wikimedia.org/wiki/File:Hovhannes_Aivazovsky_-_The_Ninth_Wave_-_Google_Art_Project.jpg">The Ninth Wave</a>
+          (Ivan Aivazovsky, 1850) and
+          <a href="https://commons.wikimedia.org/wiki/File:Johannes_Vermeer_-_The_Guitar_Player_(detail)_-_WGA24704.jpg">The Guitar Player</a>
+          (Johannes Vermeer, about 1672).
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
