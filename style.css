@@ -365,3 +365,16 @@ code {
     display: none;
   }
 }
+
+/* Support on itch.io, under Get Crate. */
+.support {
+  margin-top: 36px;
+  padding: 20px 24px 8px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+
+.support h3 {
+  margin: 0 0 6px;
+}
