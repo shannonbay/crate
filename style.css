@@ -81,10 +81,18 @@ img {
 }
 
 .wordmark {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
   font-size: 1.4rem;
   font-weight: 700;
   color: var(--accent);
   text-decoration: none;
+}
+
+/* The logo's lines use currentColor, so it follows the accent (light and dark). */
+.wordmark svg {
+  flex-shrink: 0;
 }
 
 .site-header nav {
